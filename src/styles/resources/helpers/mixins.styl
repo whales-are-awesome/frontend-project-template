@@ -1,0 +1,39 @@
+placeholder()
+	&::placeholder
+		{block}
+
+before()
+	&::before
+		content ''
+		{block}
+
+after()
+	&::after
+		content ''
+		{block}
+
+cover()
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50% 50%
+
+position()
+	if arguments is center
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+	else
+		position arguments
+
+new-size($width, $height = $width)
+	width $width
+	height $height
+
+min-size($width, $height = $width)
+	min-width $width
+	min-height $height
+
+max-size($width, $height = $width)
+	max-width $width
+	max-height $height

@@ -1,0 +1,1 @@
+export {loadPageScript} from './load-page-script'

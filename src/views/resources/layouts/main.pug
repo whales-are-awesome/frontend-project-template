@@ -1,0 +1,16 @@
+include ../common
+
+block variables
+	- let image = '/images/accessory/placeholder.jpg'
+
+doctype html
+html
+	head
+		include ../particles/head
+	body
+		.app._transition_false
+			+header
+			block content
+			+footer
+		script(src='/js/vendor.chunk.js' defer)
+		script(src=`/js/main.bundle.js` defer)

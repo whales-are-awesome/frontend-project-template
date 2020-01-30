@@ -1,0 +1,63 @@
+{
+	"name": "grid",
+	"description": "",
+	"author": "Nikita Suponov",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/andreyalexeich/gulp-pug-starter.git"
+	},
+	"license": "MIT",
+	"scripts": {
+		"dev": "gulp",
+		"build": "gulp prod --production"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.0.0",
+		"@babel/preset-env": "^7.1.0",
+		"@babel/register": "^7.0.0",
+		"babel-loader": "^8.0.5",
+		"babel-plugin-syntax-dynamic-import": "^6.18.0",
+		"browser-sync": "^2.23.6",
+		"eslint": "^5.13.0",
+		"gulp": "^4.0.0",
+		"gulp-autoprefixer": "^5.0.0",
+		"gulp-clean": "^0.4.0",
+		"gulp-clean-css": "^3.9.2",
+		"gulp-debug": "^3.2.0",
+		"gulp-favicons": "2.2.7",
+		"gulp-group-css-media-queries": "^1.2.2",
+		"gulp-if": "^2.0.2",
+		"gulp-imagemin": "^5.0.3",
+		"gulp-plumber": "^1.2.0",
+		"gulp-pug": "^4.0.1",
+		"gulp-pug-inheritance": "^0.2.1",
+		"gulp-pugbem": "^2.1.3",
+		"gulp-rename": "^1.2.2",
+		"gulp-replace": "^0.6.1",
+		"gulp-replace-name": "^1.0.1",
+		"gulp-sourcemaps": "^2.6.4",
+		"gulp-style-aliases": "^1.1.11",
+		"gulp-stylus": "^2.7.0",
+		"gulp-uglify": "^3.0.0",
+		"gulp-watch": "^5.0.0",
+		"gulp-webp": "^4.0.1",
+		"imagemin-mozjpeg": "^8.0.0",
+		"imagemin-pngquant": "^5.1.0",
+		"imagemin-webp": "^5.0.0",
+		"imagemin-zopfli": "^6.0.0",
+		"pug": "^2.0.3",
+		"vinyl-named": "^1.1.0",
+		"webpack": "^4.29.6",
+		"webpack-stream": "^5.2.1",
+		"yargs": "^12.0.5"
+	},
+	"dependencies": {
+		"animate.css": "^3.7.2",
+		"axios": "^0.19.2",
+		"jquery": "^3.4.1",
+		"navigo": "^7.1.2",
+		"normalize.css": "^8.0.1",
+		"reset-css": "^5.0.1",
+		"smart-grid": "^2.1.2"
+	}
+}
