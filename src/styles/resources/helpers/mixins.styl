@@ -18,13 +18,24 @@ cover()
 	background-position: 50% 50%
 
 position()
-	if arguments is center
+	if arguments[0] is center
 		position absolute
 		top 50%
 		left 50%
 		transform translate(-50%, -50%)
 	else
-		position arguments
+		position arguments[0]
+		if arguments[1] != null
+			top arguments[1]
+		if arguments[2] != null
+			left arguments[2]
+
+overflow()
+	if !arguments[1]
+		overflow arguments
+	else
+		overflow-x arguments[0]
+		overflow-y arguments[1]
 
 new-size($width, $height = $width)
 	width $width
@@ -37,3 +48,46 @@ min-size($width, $height = $width)
 max-size($width, $height = $width)
 	max-width $width
 	max-height $height
+
+underline($size = 1px)
+	&:after
+		width 100%
+		height $size
+
+		position absolute
+		bottom -1px
+		left 0
+
+		background-color currentColor
+		content ''
+		transition .3s
+
+hover-underline()
+	underline()
+	&:after
+		transform scale(0)
+	&:hover:after
+		transform scale(1)
+
+image-cropped-horizontal()
+	min-width 100%
+	height 100%
+
+	position absolute
+	top 0
+	left 50%
+	transform translateX(-50%)
+
+image-cropped-vertical()
+	width 100%
+	min-height 100%
+
+	position absolute
+	top 0
+	left 0
+
+rem($num)
+	($num / basis-scale()) rem
+
+basis-scale()
+	16

@@ -1,5 +1,11 @@
 @import '../resources/common'
 
+@import '../../../node_modules/normalize.css/normalize.css'
+@import '../../../node_modules/reset-css/reset.css'
+@import '../../../node_modules/animate.css/animate.min.css'
+
+@import '../resources/accessory/reset.styl'
+
 //single
 
 header()
@@ -8,3 +14,32 @@ footer()
 //regular
 
 button()
+
+//modal
+
+side-menu()
+
+body, html
+	font-family var(--font-primary), Helvetica, Arial, sans-serif
+	font-size var(--text-basis-size)
+	font-weight var(--text-primary-weight)
+	color var(--text-color)
+	&._transition_false *
+		transition none !important
+
+.app
+	min-height 100vh
+
+	display flex
+	flex-direction column
+
+	position relative
+	z-index 1
+
+	overflow hidden
+	background-color var(--color-body-bg)
+
+
+//масштабирование сайта
+:root
+	font-size basis-scale()

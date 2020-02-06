@@ -3,7 +3,7 @@ import $ from 'jquery'
 import {observer} from '@js-res/helpers/observer'
 
 export class Component {
-	constructor(componentName, dataName = 'c') {
+	constructor(componentName = 'main', dataName = 'c') {
 		const className = this.constructor.name
 		
 		if (className === 'Component') {
@@ -33,13 +33,11 @@ export class Component {
 	}
 	
 	_createEventListener(event) {
-		if(!this.observers[event] || !this.observers[event].length) {
-			const self = this
-			
-			this.$component.on(event, function(e) {
-				self.notify(event, e, this)
-			})
-		}
+		if (this.observers[event] || this.observers[event].length) return
+		
+		this.$component.on(event, (e) => {
+			this.notify(event, e, e.currentTarget)
+		})
 	}
 }
 

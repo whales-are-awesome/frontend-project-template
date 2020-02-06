@@ -1,0 +1,16 @@
+:root
+	--font-primary Some
+	--font-secondary Secondary
+
+	--text-primary-weight 400
+
+	--text-base-size rem(basis-scale())
+	--text-scale-ratio 1.2
+
+	--text-xs calc(var(--text-base-size) / (var(--text-scale-ratio) * var(--text-scale-ratio)))
+	--text-sm calc(var(--text-base-size) / var(--text-scale-ratio))
+
+	--text-basis-size var(--text-xs)
+
+	xs(--text-basis-size, var(--text-xs))
+	sm(--text-basis-size, var(--text-xs))
