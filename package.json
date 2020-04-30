@@ -54,7 +54,7 @@
 	"dependencies": {
 		"animate.css": "^3.7.2",
 		"axios": "^0.19.2",
-		"jquery": "^3.4.1",
+		"jquery": "^3.5.0",
 		"navigo": "^7.1.2",
 		"normalize.css": "^8.0.1",
 		"reset-css": "^5.0.1",
