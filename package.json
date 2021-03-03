@@ -45,7 +45,7 @@
 		"imagemin-pngquant": "^5.1.0",
 		"imagemin-webp": "^5.0.0",
 		"imagemin-zopfli": "^6.0.0",
-		"pug": "^2.0.3",
+		"pug": "^3.0.1",
 		"vinyl-named": "^1.1.0",
 		"webpack": "^4.29.6",
 		"webpack-stream": "^5.2.1",
